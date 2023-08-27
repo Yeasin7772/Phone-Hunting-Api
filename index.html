@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -17,13 +17,27 @@
     </header>
     <main>
         <section class="container mx-auto mt-8">
-            <h1 class="text-5xl text-cyan-400 font-bold text-center">Search your phone</h1>
+
+            <h1 class="text-5xl text-cyan-400 font-bold text-center mb-12">Search your phone</h1>
+
+            <div class="text-center mb-8">
+                <input id="input-field" type="text" placeholder="Search your phone" 
+                class="input input-bordered w-full max-w-xs" />
+                <button onclick="handelSearch()" class="btn btn-accent">Accent</button>
+
+            </div>
+            <div id="phone-container" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 px-10">
+
+                
+
+            </div>
 
         </section>
     </main>
     <footer></footer>
 
-    <script src="js/index.js"></script>
+    <!-- scripts link -->
+     <script src="js/index.js"></script>
 
 
 
