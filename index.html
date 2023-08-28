@@ -21,23 +21,57 @@
             <h1 class="text-5xl text-cyan-400 font-bold text-center mb-12">Search your phone</h1>
 
             <div class="text-center mb-8">
-                <input id="input-field" type="text" placeholder="Search your phone" 
-                class="input input-bordered w-full max-w-xs" />
-                <button onclick="handelSearch()" class="btn btn-accent">Accent</button>
+                <input id="input-field" type="text" placeholder="Search your phone"
+                    class="input input-bordered w-full max-w-xs" />
+                <button onclick="handelSearch()" class="btn btn-accent">Search</button>
 
             </div>
             <div id="phone-container" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 px-10">
 
-                
+
 
             </div>
 
         </section>
+        <section>
+
+            <!-- spinner or loader -->
+            <div id="loading-spinner" class="text-center hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+
+            </div>
+
+
+            <!-- show all button -->
+            <div id="show-all-container" class="hidden text-center my-8">
+                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
+            </div>
+
+
+              <!--show modal -->
+        <!-- Open the modal using ID.showModal() method -->
+       
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
+                <div id="show-detail-container">
+
+                </div>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </div>
+            </form>
+        </dialog>
+        </section>
+      
+
+
     </main>
     <footer></footer>
 
     <!-- scripts link -->
-     <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
 
 
 
